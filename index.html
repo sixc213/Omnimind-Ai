@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">Omni<span>Mind</span></a>
@@ -25,18 +24,15 @@
         </div>
     </nav>
 
-    <!-- Hero + Demo -->
     <section class="hero" id="demo">
         <div class="hero-content">
             <div class="hero-text">
                 <div class="status"><i class="fas fa-circle"></i> Real-time • Inclusive • Accessible</div>
                 <h1>Accessibility Without Barriers</h1>
-                <p>OmniMind translates language, speech, text, and context in real-time for physical and cognitive needs.</p>
+                <p>OmniMind translates language, speech, text, and context in real-time to support physical and cognitive accessibility needs.</p>
                 
                 <div class="cta-buttons">
-                    <button onclick="startDemo()" class="btn btn-primary">
-                        <i class="fas fa-bolt"></i> Start Free Demo
-                    </button>
+                    <button onclick="startDemo()" class="btn btn-primary"><i class="fas fa-bolt"></i> Start Free Demo</button>
                     <a href="#features" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
@@ -45,7 +41,7 @@
                 <div class="chat-header">
                     <div class="ai-avatar">OM</div>
                     <div>
-                        <strong>OmniMind</strong><br>
+                        <strong>OmniMind Assistant</strong><br>
                         <small id="status-text">● Online • Ready to adapt</small>
                     </div>
                 </div>
@@ -53,36 +49,57 @@
                 <div class="chat-messages" id="chat-messages"></div>
                 
                 <div class="input-area">
-                    <input type="text" id="user-input" placeholder="Type or speak your message..." 
-                           onkeypress="if(event.key === 'Enter') sendMessage()">
-                    <button onclick="toggleVoice()" class="btn-icon voice-btn" title="Voice Input">
-                        <i class="fas fa-microphone"></i>
-                    </button>
-                    <button onclick="sendMessage()" class="btn-icon send-btn">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
+                    <input type="text" id="user-input" placeholder="Type or speak your message..." onkeypress="if(event.key === 'Enter') sendMessage()">
+                    <button onclick="toggleVoice()" class="btn-icon voice-btn" title="Voice Input"><i class="fas fa-microphone"></i></button>
+                    <button onclick="sendMessage()" class="btn-icon send-btn"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features -->
     <section id="features">
         <div class="container">
             <h2>Designed for Every Mind and Body</h2>
             <div class="features">
-                <!-- Cards same as before - omitted for brevity, copy from previous version if needed -->
-                <div class="feature-card">... (same 6 cards as previous response) ...</div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Cognitive Accessibility</h3>
+                    <p>Simplifies complex language, explains concepts at different reading levels, and provides visual or audio alternatives.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👂</div>
+                    <h3>Real-time Speech Translation</h3>
+                    <p>Converts speech to text, text to speech, and translates instantly with natural voice output.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Physical Barrier Support</h3>
+                    <p>Gesture recognition ready, large text, high contrast, and motor-friendly controls.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multimodal Translation</h3>
+                    <p>Text ↔ Speech ↔ Simplified English ↔ Visual descriptions. Supports dyslexia, autism, hearing & vision impairments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Context-Aware</h3>
+                    <p>Understands conversation context and personal accessibility profile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Works Everywhere</h3>
+                    <p>Web, mobile, browser extensions, and assistive devices.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
     <section id="about">
         <div class="container">
             <div class="about-content">
                 <h2>Building a More Inclusive Future</h2>
-                <p>OmniMind was created to remove communication barriers using advanced AI.</p>
+                <p>OmniMind removes communication barriers using powerful AI — for neurodivergent individuals, people with physical disabilities, and anyone who benefits from adapted information.</p>
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn btn-primary">Begin Your Journey</button>
             </div>
         </div>
